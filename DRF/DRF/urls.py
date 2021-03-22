@@ -21,6 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('studentapi/', views.student_api),
     path('stuinfo/', views.student_detail),
-    path('stucreate/', views.student_create)
+    path('stucreate/', views.student_create),
+    path('update/', views.student_update),
+    path('delete/', views.student_delete),
    # path('stuinfo/<int:pk>/', views.student_detail)
 ]
