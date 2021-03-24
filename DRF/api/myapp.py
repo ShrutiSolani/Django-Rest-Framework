@@ -30,19 +30,19 @@ url4 = "http://127.0.0.1:8000/delete/"
 # get_data(2)
 
 
-# #create
-# def post_data():
-#     data = {
-#         'name':'Maya',
-#         'roll':4,
-#         'city': 'Mumbai'
-#     }
-#     json_data = json.dumps(data)
-#     r = requests.post(url = url2, data = json_data)
-#     data = r.json()
-#     print(data)
+#create
+def post_data():
+    data = {
+        'name':'Ram',
+        'roll':10,
+        'city': 'Ayodhya'
+    }
+    json_data = json.dumps(data)
+    r = requests.post(url = url2, data = json_data)
+    data = r.json()
+    print(data)
 
-# post_data()
+post_data()
 
 # #update
 # def update_data():
@@ -58,11 +58,11 @@ url4 = "http://127.0.0.1:8000/delete/"
 # update_data()
 
 #delete
-def delete_data():
-    data = {'id': 4}
-    json_data = json.dumps(data)
-    r = requests.delete(url = url4, data = json_data)
-    data = r.json()
-    print(data)
+# def delete_data():
+#     data = {'id': 4}
+#     json_data = json.dumps(data)
+#     r = requests.delete(url = url4, data = json_data)
+#     data = r.json()
+#     print(data)
 
-delete_data()
+# delete_data()
